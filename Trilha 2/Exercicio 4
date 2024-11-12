@@ -1,0 +1,25 @@
+public class Temperatura {
+    private double valorCelsius;
+
+    public Temperatura(double valorCelsius) {
+        this.valorCelsius = valorCelsius;
+    }
+
+    public double converterParaFahrenheit() {
+        return (valorCelsius * 9/5) + 32;
+    }
+
+    public double converterParaKelvin() {
+        return valorCelsius + 273.15;
+    }
+
+    public double getValorCelsius() {
+        return valorCelsius;
+    }
+
+    public void exibirTemperaturas() {
+        System.out.println("Temperatura em Celsius: " + valorCelsius);
+        System.out.println("Temperatura em Fahrenheit: " + converterParaFahrenheit());
+        System.out.println("Temperatura em Kelvin: " + converterParaKelvin());
+    }
+}

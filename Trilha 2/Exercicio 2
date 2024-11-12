@@ -1,0 +1,40 @@
+public class Livro {
+    private String titulo;
+    private String autor;
+    private int paginas;
+    private boolean lido;
+
+    public Livro(String titulo, String autor, int paginas) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.paginas = paginas;
+        this.lido = false;
+    }
+
+    public void marcarComoLido() {
+        this.lido = true;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getPaginas() {
+        return paginas;
+    }
+
+    public boolean isLido() {
+        return lido;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Páginas: " + paginas);
+        System.out.println("Lido: " + (lido ? "Sim" : "Não"));
+    }
+}
